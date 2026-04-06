@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Sanjay Mathur, a Clinical Pastoral Education trained Hindu Chaplain serving universities and hospitals across New York.">
+  <title>About Sanjay Mathur - Hindu Chaplaincy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav-container" data-testid="main-navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" data-testid="nav-logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 10c-5 15-20 25-20 40 0 15 10 25 20 35 10-10 20-20 20-35 0-15-15-25-20-40z" opacity="0.3"/>
+          <path d="M50 20c-4 12-15 20-15 32 0 12 8 20 15 28 7-8 15-16 15-28 0-12-11-20-15-32z" opacity="0.5"/>
+          <path d="M50 30c-3 9-10 15-10 24 0 9 5 15 10 21 5-6 10-12 10-21 0-9-7-15-10-24z"/>
+        </svg>
+        Hindu Chaplaincy
+      </a>
+      
+      <button class="nav-toggle" data-testid="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" data-testid="nav-links">
+        <li><a href="index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" class="active" data-testid="nav-about">About</a></li>
+        <li><a href="empathy.html" data-testid="nav-empathy">Empathy Tribe</a></li>
+        <li><a href="matters.html" data-testid="nav-matters">Why It Matters</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <section class="about-hero" data-testid="about-hero">
+    <span class="hero-overline" style="display: block; margin-bottom: 1rem;">Meet Your Chaplain</span>
+    <h1>Sanjay Mathur</h1>
+    <p style="max-width: 600px; margin: 1rem auto 0; font-size: 1.125rem;">A Hindu Chaplain and community leader dedicated to fostering spiritual care, interfaith understanding, and compassionate service.</p>
+  </section>
+
+  <!-- Profile Section -->
+  <section class="section" data-testid="profile-section">
+    <div class="container">
+      <div class="profile-section">
+        <div class="profile-image">
+          <img src="https://images.pexels.com/photos/7580994/pexels-photo-7580994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sanjay Mathur - Hindu Chaplain">
+        </div>
+        
+        <div class="profile-content">
+          <h3>Background & Training</h3>
+          <p>Sanjay Mathur is a Clinical Pastoral Education (CPE)-trained chaplain who has completed four units of CPE in hospital settings at UR Medicine and Rochester Regional Health. His extensive training combines the depth of Hindu spiritual wisdom with modern counseling techniques to provide holistic care.</p>
+          
+          <ul class="credentials-list" data-testid="credentials-list">
+            <li>Clinical Pastoral Education (CPE) Certified</li>
+            <li>Four units of CPE in hospital settings</li>
+            <li>Training at UR Medicine</li>
+            <li>Training at Rochester Regional Health</li>
+            <li>Interfaith dialogue and understanding expertise</li>
+          </ul>
+          
+          <h3>Current Positions</h3>
+          <p>Sanjay currently serves as a chaplain at multiple prestigious institutions, bringing Hindu spiritual care to students, patients, and community members across New York State.</p>
+          
+          <div class="universities-grid" data-testid="universities-grid">
+            <div class="university-card">
+              <h4>University of Rochester</h4>
+              <p style="font-size: 0.875rem; margin-top: 0.5rem;">Interfaith Chapel</p>
+            </div>
+            <div class="university-card">
+              <h4>Syracuse University</h4>
+              <p style="font-size: 0.875rem; margin-top: 0.5rem;">Hendricks Chapel</p>
+            </div>
+            <div class="university-card">
+              <h4>Rochester Institute of Technology</h4>
+              <p style="font-size: 0.875rem; margin-top: 0.5rem;">Campus Ministry</p>
+            </div>
+            <div class="university-card">
+              <h4>Colgate University</h4>
+              <p style="font-size: 0.875rem; margin-top: 0.5rem;">Visiting Hindu Chaplain</p>
+            </div>
+          </div>
+          
+          <h3>Approach to Spiritual Care</h3>
+          <p>Drawing upon the rich traditions of Hindu philosophy—including the wisdom of dharma, karma, and seva—Sanjay provides compassionate guidance that honors individual spiritual journeys while addressing practical life challenges. His approach integrates active listening, cultural sensitivity, and deep respect for each person's unique path.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Banner -->
+  <section class="section section-dark mission-banner" data-testid="mission-section">
+    <div class="container">
+      <span class="hero-overline" style="color: var(--accent-ochre); display: block; margin-bottom: 1rem;">Our Mission</span>
+      <h2>Bridging Tradition and Modern Care</h2>
+      <p>To provide culturally sensitive, spiritually grounded support that helps Hindu individuals and families navigate life's challenges with wisdom, compassion, and connection to their faith traditions—whether in hospitals, universities, or community settings.</p>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section section-alt" data-testid="values-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="overline">Guiding Principles</span>
+        <h2>Core Values</h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <h3 style="color: var(--accent-forest); margin-bottom: 1rem;">Seva (Service)</h3>
+          <p>Selfless service forms the foundation of chaplaincy work. We serve without expectation, offering support to all who need spiritual guidance and compassionate care.</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <h3 style="color: var(--accent-forest); margin-bottom: 1rem;">Karuna (Compassion)</h3>
+          <p>Deep empathy and compassion guide every interaction. We meet individuals where they are, honoring their experiences and supporting their healing journey.</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <h3 style="color: var(--accent-forest); margin-bottom: 1rem;">Dharma (Righteous Living)</h3>
+          <p>We help individuals connect with their dharma—their purpose and path—providing guidance that aligns with Hindu wisdom while respecting each person's unique journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" data-testid="about-cta">
+    <div class="container text-center">
+      <h2>Connect with Sanjay</h2>
+      <p style="max-width: 600px; margin: 1rem auto 2rem;">Whether you're seeking spiritual guidance, need support during a difficult time, or want to learn more about Hindu chaplaincy services, we welcome your connection.</p>
+      <a href="contact.html" class="btn btn-primary" data-testid="about-contact-btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-testid="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Hindu Chaplaincy</h3>
+        <p>Spiritual Care and Connection for the Hindu community. Offering compassionate support through life's transitions.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="empathy.html">Empathy Tribe</a></li>
+          <li><a href="matters.html">Why It Matters</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="contact.html">Family Support</a></li>
+          <li><a href="contact.html">Hospital Chaplaincy</a></li>
+          <li><a href="contact.html">University Services</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12017572278">+1 (201) 757-2278</a></li>
+          <li><a href="mailto:info@thehinduchaplain.com">info@thehinduchaplain.com</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Hindu Chaplaincy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
