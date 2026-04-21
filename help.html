@@ -257,6 +257,7 @@
       <ul class="nav-links" data-testid="nav-links">
         <li><a href="index.html" data-testid="nav-home">Home</a></li>
         <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="sacred-passage.html" data-testid="nav-sacred">Sacred Passage</a></li>
         <li><a href="empathy.html" data-testid="nav-empathy">Empathy Tribe</a></li>
         <li><a href="matters.html" data-testid="nav-matters">Why It Matters</a></li>
         <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
@@ -528,6 +529,9 @@
       navLinks.classList.toggle('active');
     }
     
+    // Google Sheets Web App URL
+    const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycby7eQBh1_bZSGBJFHmW9sfWjDd0CCrsGYMu-tmeer9dy9OkQBr-WQwHKJnlDN39qYo5Qg/exec';
+    
     // Form submission handler
     document.getElementById('helpRequestForm').addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -542,26 +546,24 @@
       const data = Object.fromEntries(formData.entries());
       
       try {
-        const response = await fetch('/api/help-request', {
+        // Send to Google Sheets
+        const response = await fetch(GOOGLE_SHEETS_URL, {
           method: 'POST',
+          mode: 'no-cors',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(data)
         });
         
-        const result = await response.json();
-        
-        if (result.success) {
-          alert('Thank you for your request! We will contact you within 24 hours.');
-          this.reset();
-        } else {
-          alert('Something went wrong. Please try again or call us directly at +1 (201) 757-2278');
-        }
-      } catch (error) {
-        console.error('Error:', error);
+        // Since mode is 'no-cors', we can't read the response
+        // But if no error was thrown, assume success
         alert('Thank you for your request! We will contact you within 24 hours.');
         this.reset();
+        
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Something went wrong. Please try again or call us directly at +1 (201) 757-2278');
       } finally {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;

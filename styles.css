@@ -679,22 +679,14 @@ p {
 
 /* Empathy Page */
 .empathy-hero {
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, var(--accent-deep), #5a3a1a);
   padding: 8rem 2rem;
-}
-
-.empathy-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(139, 69, 19, 0.85), rgba(45, 24, 16, 0.75));
 }
 
 .empathy-hero-content {
